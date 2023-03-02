@@ -1,0 +1,19 @@
+﻿@model IEnumerable<MvcMongoDB.Models.User>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Country</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Name</td>
+                <td>@user.Country</td>
+            </tr>
+        }
+    </tbody>
+</table>
